@@ -1,4 +1,4 @@
-<mat-table [dataSource]="courses" class="mat-elevation-z8">
+<mat-table [dataSource]="courses">
   <!-- Name Column -->
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef>Curso</mat-header-cell>
@@ -20,7 +20,7 @@
 
   <!-- Action -->
   <ng-container matColumnDef="actions">
-    <mat-header-cell *matHeaderCellDef>
+    <mat-header-cell *matHeaderCellDef class="action-column-header">
       <button
         mat-mini-fab
         color="primary"
@@ -31,12 +31,12 @@
       </button>
     </mat-header-cell>
 
-    <mat-cell *matCellDef="let course">
-      <button mat-mini-fab color="primary" arial-label="Editar curso">
+    <mat-cell *matCellDef="let course" class="action-column">
+      <button mat-icon-button color="primary" arial-label="Editar curso">
         <mat-icon>edit</mat-icon>
       </button>
 
-      <button mat-mini-fab color="primary" arial-label="Excluir curso">
+      <button mat-icon-button color="warn" arial-label="Excluir curso">
         <mat-icon>delete</mat-icon>
       </button>
     </mat-cell>

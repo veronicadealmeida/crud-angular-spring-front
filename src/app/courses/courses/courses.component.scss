@@ -1,5 +1,13 @@
-table {
-  width: 100%;
+mat-card {
+  max-width: 90%;
+  margin: 2em;
+  text-align: center;
+}
+
+.colum-flex {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
 }
 
 .loading-spinner {
