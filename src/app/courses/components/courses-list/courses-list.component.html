@@ -10,7 +10,7 @@
     <mat-header-cell *matHeaderCellDef>Categoria</mat-header-cell>
     <mat-cell *matCellDef="let course">
       {{ course.category }}
-      <mat-icon
+      <mat-icon class="mat-icon-actions"
         aria-hidden="false"
         aria-label="Categoria do curso"
         fontIcon="{{ course.category | category }}"
@@ -19,7 +19,7 @@
   </ng-container>
 
   <!-- Action -->
-  <ng-container matColumnDef="actions">
+  <ng-container matColumnDef="actions" class="mat-icon-actions">
     <mat-header-cell *matHeaderCellDef class="action-column-header">
       <button
         mat-mini-fab

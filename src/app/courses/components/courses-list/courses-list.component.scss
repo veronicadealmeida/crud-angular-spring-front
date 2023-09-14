@@ -4,13 +4,13 @@ mat-table {
 }
 
 .action-column {
-  flex: 0 0 7rem;
+  flex: 0 0 8rem;
 }
 
 .action-column-header {
-  flex: 0 0 5.5rem;
+  flex: 0 0 6rem;
 }
 
-mat-icon {
-  padding-left: 1rem;
+.mat-icon-actions {
+  margin-left: 1rem;
 }
