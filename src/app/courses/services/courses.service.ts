@@ -3,6 +3,7 @@ import { Course } from '../model/course';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/internal/operators/tap';
 import { delay, first } from 'rxjs';
+import { CourseResolver } from '../guards/course.resolver';
 
 @Injectable({
   providedIn: 'root',
@@ -17,6 +18,10 @@ export class CoursesService {
       // delay(1000),
       tap((courses) => console.log(courses))
     );
+  }
+
+  loadById(id: string) {
+    return this.httpClient.get<Course>(`${this.API}/${id}`);
   }
 
   save(record: Partial<Course>) {

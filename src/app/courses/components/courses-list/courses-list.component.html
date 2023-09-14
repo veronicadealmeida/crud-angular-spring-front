@@ -10,7 +10,8 @@
     <mat-header-cell *matHeaderCellDef>Categoria</mat-header-cell>
     <mat-cell *matCellDef="let course">
       {{ course.category }}
-      <mat-icon class="mat-icon-actions"
+      <mat-icon
+        class="mat-icon-actions"
         aria-hidden="false"
         aria-label="Categoria do curso"
         fontIcon="{{ course.category | category }}"
@@ -32,7 +33,12 @@
     </mat-header-cell>
 
     <mat-cell *matCellDef="let course" class="action-column">
-      <button mat-icon-button color="primary" arial-label="Editar curso">
+      <button
+        mat-icon-button
+        color="primary"
+        arial-label="Editar curso"
+        (click)="onEdit(course)"
+      >
         <mat-icon>edit</mat-icon>
       </button>
 
