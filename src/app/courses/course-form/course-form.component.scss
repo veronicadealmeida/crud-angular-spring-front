@@ -1,0 +1,28 @@
+.full-width {
+  width: 100%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 2em auto;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.min-width {
+  width: 100%;
+  min-width: 200px;
+}
+
+button {
+  margin: 10px;
+  min-width: 100px;
+}
+
+.container__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
