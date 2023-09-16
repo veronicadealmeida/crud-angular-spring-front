@@ -46,7 +46,10 @@ export class CoursesComponent implements OnInit {
 
   onAdd() {
     this.refresh();
-    this.router.navigate(['new'], { relativeTo: this.route });
+    this.router
+      .navigate(['new'], { relativeTo: this.route })
+      .then(() => this.refresh());
+
     this.refresh();
   }
 

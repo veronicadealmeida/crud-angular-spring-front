@@ -23,8 +23,8 @@ export class CoursesListComponent implements OnInit {
     this.add.emit(true);
   }
 
-  onEdit(course: Course) {
-    this.edit.emit(course);
+  onEdit(record: Course) {
+    this.edit.emit(record);
   }
 
   onRemove(record: Course) {
